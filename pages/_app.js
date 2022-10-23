@@ -1,4 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import Footer from "../components/footer";
+import Nav from "../components/nav";
+import useWindowSize from "../hooks/useScreenDimensions";
 import "../styles/globals.css";
 //use custom layout here
 
@@ -10,7 +13,8 @@ body {
   margin: 0;
   font-family: Figtree, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #222;
+  position: relative;
+  scroll-behavior: smooth;
   position: relative;
 }
 
@@ -26,11 +30,14 @@ a {
 button {
   outline: 0;
   font-family: Figtree;
+  background: transparent;
   border: none;
+  cursor: pointer;
 }
 :focus {
   outline: 0;
 }
+
 
 input {
   outline: 0;
@@ -53,7 +60,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
+      <Nav />
+
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
