@@ -10,10 +10,15 @@
   },
   "dependencies": {
     "framer-motion": "^7.6.1",
+    "leaflet": "^1.9.2",
+    "lodash.debounce": "^4.0.8",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.6"
+    "react-leaflet": "^4.1.0",
+    "react-leaflet-marker": "^2.0.0",
+    "styled-components": "^5.3.6",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "8.25.0",
