@@ -5,10 +5,9 @@ const Container = styled.div`
   height: 100vh;
   width: 100%;
 `;
+const _Map = dynamic(() => import("./map"), { ssr: false });
 
 const Map = () => {
-  const _Map = dynamic(() => import("./map"), { ssr: false });
-
   return (
     <Container>
       <_Map />
