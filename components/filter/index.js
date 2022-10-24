@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 95px;
   padding: ${({ width }) =>
     width <= 744 ? "14px 24px 0px" : width <= 1440 ? "0px 40px" : "0px 80px"};
   margin-top: 0px;
